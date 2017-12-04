@@ -833,8 +833,8 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
     return nSubsidy + nFees;
 }
 
-static const int64 nTargetTimespan = 1 * 24 * 60 * 60; // PGGCOIN: 1 days
-static const int64 nTargetSpacing = 120; // PGGCOIN: 2 minute blocks
+static const int64 nTargetTimespan = 1 * 60; // PGGCOIN: 1 minute
+static const int64 nTargetSpacing = 5; // PGGCOIN: 5 sec blocks
 static const int64 nInterval = nTargetTimespan / nTargetSpacing;
 
 // Thanks: Balthazar for suggesting the following fix
